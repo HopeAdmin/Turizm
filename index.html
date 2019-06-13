@@ -11,6 +11,12 @@
       var contentHeader = link.import.querySelector('#header');
       document.body.appendChild(contentHeader.cloneNode(true));
     </script>
+     <link rel="import" href="/footer.html">
+            <script>
+      var linkFooter = document.querySelector('link[rel=import]');
+           var contentFooter = linkFooter.import.querySelector('#foot');
+       document.body.appendChild(contentFooter.cloneNode(true));
+    </script>
     
     <!-- END header -->
 
@@ -73,12 +79,7 @@
 тури в карпати</p>
           </div>
         </div>
- <link rel="import" href="/footer.html">
-            <script>
-      var linkFooter = document.querySelector('link[rel=import]');
-           var contentFooter = linkFooter.import.querySelector('#foot');
-       document.body.appendChild(contentFooter.cloneNode(true));
-    </script>
+
     <!-- END footer -->
     
     <!-- loader -->
