@@ -9,9 +9,9 @@
     <script>
       var linkHeader = document.querySelector('link[rel=import]');
       var contentHeader = linkHeader.import.querySelector('#header');
-          var linkFooter = document.querySelector('link[rel=import]');
-      var contentFooter = linkFooter.import.querySelector('#footer');
       document.body.appendChild(contentHeader.cloneNode(true));
+        var linkFooter = document.querySelector('link[rel=import]');
+      var contentFooter = linkFooter.import.querySelector('#footer');
         document.body.appendChild(contentFooter.cloneNode(true));
     </script>
     
