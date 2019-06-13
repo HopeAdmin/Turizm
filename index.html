@@ -2,18 +2,16 @@
 <html lang="en">
   <html> 
   <head> 
-    <script src="jquery-3.2.1.min.js"></script> 
-    <script src="jquery-migrate-3.0.0.js"></script> 
-<script src="jquery.stellar.min.js"></script> 
-    <script> 
-    $(function(){
-      $("#includedContent").load("hopeadmin.github.io.html"); 
-    });
-    </script> 
+   <link rel="import" href="header.html">
   </head> 
 
   <body> 
-     <div id="includedContent"></div>
+    <script>
+var doc = document.querySelector('link[rel="import"]').import;
+// Grab DOM from doc.html's document.
+var text = doc.querySelector('.doc');
+document.body.appendChild(text.cloneNode(true));
+</script>
     
     <!-- END header -->
 
