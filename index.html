@@ -2,11 +2,15 @@
 <html lang="en">
   <html> 
   <head> 
-<object type="text/html" data="header.html"></object>
-  </head> 
-
-  <body> 
-
+ <link rel="import" href="/header.html">
+  </head>
+  <body>
+ 
+    <script>
+      var link = document.querySelector('link[rel=import]');
+      var content = link.import.querySelector('#header');
+      document.body.appendChild(content.cloneNode(true));
+    </script>
     
     <!-- END header -->
 
