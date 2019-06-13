@@ -9,9 +9,7 @@
     <script>
       var link = document.querySelector('link[rel=import]');
       var contentHeader = link.import.querySelector('#header');
-           var contentFooter = link.import.querySelector('#footer');
       document.body.appendChild(contentHeader.cloneNode(true));
-       document.body.appendChild(contentFooter.cloneNode(true));
     </script>
     
     <!-- END header -->
@@ -76,6 +74,11 @@
           </div>
         </div>
  <link rel="import" href="/footer.html">
+            <script>
+      var linkFooter = document.querySelector('link[rel=import]');
+           var contentFooter = linkFooter.import.querySelector('#foot');
+       document.body.appendChild(contentFooter.cloneNode(true));
+    </script>
     <!-- END footer -->
     
     <!-- loader -->
