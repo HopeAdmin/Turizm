@@ -1,14 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head> 
+     <title>My Karpaty</title>
  <link rel="import" href="/header.html">
   </head>
   <body>
  
     <script>
-      var link = document.querySelector('link[rel=import]');
-      var content = link.import.querySelector('#header');
-      document.body.appendChild(content.cloneNode(true));
+      var linkHeader = document.querySelector('link[rel=import]');
+      var contentHeader = linkHeader.import.querySelector('#header');
+          var linkFooter = document.querySelector('link[rel=import]');
+      var contentFooter = linkFooter.import.querySelector('#footer');
+      document.body.appendChild(contentHeader.cloneNode(true));
+        document.body.appendChild(contentFooter.cloneNode(true));
     </script>
     
     <!-- END header -->
@@ -72,7 +76,8 @@
 тури в карпати</p>
           </div>
         </div>
-      <object type="text/html" data="footer.html"></object>
+ <link rel="import" href="/footer.html">
+        
     <!-- END footer -->
     
     <!-- loader -->
